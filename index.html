@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> <!--斷線CSS-->
+
+    <title>離線版</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="bootstrap/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+
+      <div class="container mt-5">
+          <h1 class="text-center">註冊表單</h1>
+          
+          <iframe name="returnWin" style="display: none;" onload="this.onload=function(){window.location='ok.html'}"></iframe>
+
+          <form target="returnWin" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScr7HU0HTY9gpgMJ6adGvlS3v3Lmx4OInCtmD7QHUBCjod4Fw/formResponse" method="post" id="myForm" class="mb-2">
+          <!--傳檔案就是要加enctype="multipart/form-data"(規定)-->
+          <!-- <div class="row"> -->
+          <div display:flex>         
+              <!--問題一-->              
+              <div class="col-sm-6, col-md-4">
+                <div class="form-group">
+                  <label>問題一<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" name="entry.1933446516" id="uname" value="" required>
+                </div>
+              </div>         
+              <!--問題二-->              
+              <div class="col-sm-6, col-md-4">
+                <div class="form-group">
+                  <label>問題二<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" name="entry.2088429735" id="name" value="" required>
+                </div>
+              </div>         
+            <div class="text-center pb-20">
+              <input type="hidden" name="op" value="reg">
+              <button type="submit" class="btn btn-primary">送出</button>
+            </div>
+        
+          </form>
+      </div>    
+
+ </body>
+</html>
